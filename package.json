@@ -11,6 +11,26 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "lint": "xo"
+  },
+  "devDependencies": {
+    "eslint-config-samtgarson": "^0.0.5",
+    "eslint-import-resolver-webpack": "^0.8.1",
+    "eslint-plugin-html": "^2.0.0",
+    "xo": "^0.17.1"
+  },
+  "xo": {
+    "extends": "samtgarson",
+    "extensions": [
+      "vue"
+    ],
+    "plugins": [
+      "html"
+    ],
+    "semicolon": false,
+    "settings": {
+      "import/resolver": "webpack"
+    }
   }
 }
