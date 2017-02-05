@@ -9,14 +9,24 @@ export default {
 </script>
 
 <template lang="pug">
-  #container
-    #main
-      nuxt
-    social
+  #body
+    #container
+      main
+        nuxt
+      aside
+        social
 </template>
 
 <style lang="sass" scoped>
-@import '../lib/global.sass'
+@import '../assets/global.sass'
+
+#body
+  position: fixed
+  left: 0
+  right: 0
+  top: 0
+  bottom: 0
+  background-color: $base
 
 #container
   width: 100%
@@ -29,11 +39,18 @@ export default {
     padding: 10vh 15px
 
 @media (min-width: $small)
-  #main
+  main
     width: 50%
+    z-index: 1
+    position: relative
 
-  .social
+  aside
+    z-index: 0
     position: fixed
     right: 0
-    bottom: 0
+    left: 0
+    max-width: 900px
+    text-align: right
+    margin: 0 auto
+    bottom: 30px
 </style>
