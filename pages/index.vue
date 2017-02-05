@@ -1,18 +1,8 @@
-<template>
-  <section class="container">
-    <img src="../assets/img/logo.png" alt="Nuxt.js Logo" class="logo" />
-    <h1 class="title">
-      Universal Vue.js Application Framework
-    </h1>
-    <nuxt-link class="button" to="/about">
-      About page
-    </nuxt-link>
-  </section>
+<template lang="pug">
+div
+  h1 Sam Garson
+  h2 I help turn ideas into viable, beautiful and successful products which solve the problems you need to solve.
 </template>
 
-<style scoped>
-.title
-{
-  margin: 50px 0;
-}
+<style scoped lang="sass">
 </style>
