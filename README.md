@@ -1,6 +1,6 @@
 # portfolio-2
 
-> Portfolio 2017
+> Latest attempt at a portfolio I'm happy with
 
 ## Build Setup
 

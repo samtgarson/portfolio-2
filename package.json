@@ -26,6 +26,10 @@
     "sass-variable-loader": "^0.0.4",
     "xo": "^0.17.1"
   },
+  "now": {
+    "name": "samtgarson",
+    "aliases": ["samtgarson"]
+  },
   "xo": {
     "extends": "samtgarson",
     "extensions": [
