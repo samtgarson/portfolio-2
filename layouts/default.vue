@@ -1,15 +1,17 @@
 <script>
-import Social from '~components/social.vue'
+import Social from '~components/social'
+import SquiggleGrid from '~components/squiggle-grid'
 
 export default {
   components: {
-    Social
+    Social, SquiggleGrid
   }
 }
 </script>
 
 <template lang="pug">
   #body
+    squiggle-grid
     #container
       main
         nuxt
@@ -52,5 +54,5 @@ export default {
     max-width: 900px
     text-align: right
     margin: 0 auto
-    bottom: 30px
+    bottom: 8vh
 </style>
