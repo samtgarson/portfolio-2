@@ -1,16 +1,18 @@
 <script>
 import Social from '~components/social'
 import SquiggleGrid from '~components/squiggle-grid'
+import Background from '~components/background'
 
 export default {
   components: {
-    Social, SquiggleGrid
+    Social, SquiggleGrid, Background
   }
 }
 </script>
 
 <template lang="pug">
   #body
+    background
     squiggle-grid
     #container
       main
@@ -28,7 +30,6 @@ export default {
   right: 0
   top: 0
   bottom: 0
-  background-color: $base
 
 #container
   width: 100%
@@ -49,10 +50,11 @@ export default {
   aside
     z-index: 0
     position: fixed
-    right: 0
+    right: 0px
     left: 0
     max-width: 900px
     text-align: right
     margin: 0 auto
+    padding: 0 30px
     bottom: 8vh
 </style>

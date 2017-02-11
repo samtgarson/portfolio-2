@@ -25,7 +25,7 @@ export default {
   height: 14px
   display: block
   position: relative
-  overflow-x: hidden
+  overflow: hidden
 
 svg
   transform: translate3d(-100%, 0, 0)

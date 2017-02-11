@@ -2,10 +2,10 @@
 import Poisson from 'poisson-disk-sampling'
 import Squiggle from './squiggle'
 import vars from '!!sass-variable-loader!~/assets/global.sass'
+import { dist } from '~assets/utils'
 
 const MIN_DIST = 160
 const TARGET_FACTOR = .7
-const dist = ([x, y], [xt, yt]) => Math.sqrt(((xt - x)**2) + ((yt - y)**2))
 
 export default {
   data () {
