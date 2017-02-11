@@ -1,15 +1,14 @@
 <script>
 import Poisson from 'poisson-disk-sampling'
 import Squiggle from './squiggle'
-import vars from '!!sass-variable-loader!~/assets/global.sass'
-import { dist } from '~assets/utils'
+import { dist, vars } from '~assets/utils'
 
 const MIN_DIST = 160
-const TARGET_FACTOR = .7
+const TARGET_FACTOR = 0.7
 
 export default {
   data () {
-    return { 
+    return {
       points: [],
       pds: null,
       squiggles: [],
@@ -45,16 +44,8 @@ export default {
           bottom: `${point[1] / this.dimensions.h * 100}%`,
           transform: `rotate(${Math.random() * 360}deg)`
         },
-        color: i == 0 ? vars.accent1 : i == 2 ? vars.accent2 : '#fff'
+        color: i === 0 ? vars.accent1 : i === 2 ? vars.accent2 : '#fff'
       }
-    }
-  },
-  computed: {
-    accents () {
-      if (!this.squiggles.length) return
-      return this.squiggles.reduce((lowest, current) => {
-
-      }, this.squiggles.first)
     }
   },
   components: { Squiggle }

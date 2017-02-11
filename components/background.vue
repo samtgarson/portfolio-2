@@ -1,7 +1,7 @@
 <script>
-import vars from '!!sass-variable-loader!~/assets/global.sass'
-import { dist } from '~assets/utils'
-const decouple = typeof(window) !== 'undefined' ? require('decouple') : null
+import { dist, vars } from '~assets/utils'
+
+const decouple = typeof (window) === 'undefined' ? null : require('decouple')
 
 export default {
   data () {
@@ -18,7 +18,7 @@ export default {
     },
     updateSize () {
       const { innerWidth: w, innerHeight: h } = window
-      this.radius = `${dist([0, 0], [w*1.5, h*1.5])}px`
+      this.radius = `${dist([0, 0], [w * 1.5, h * 1.5])}px`
     },
     cleanup () {
       if (this.colours.length > 1) this.colours = [this.colours[this.colours.length - 1]]

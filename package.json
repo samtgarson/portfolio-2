@@ -14,13 +14,15 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "lint": "xo"
+    "test": "xo",
+    "ci": "xo --reporter junit"
   },
   "devDependencies": {
     "eslint-config-samtgarson": "^0.0.5",
     "eslint-import-resolver-webpack": "^0.8.1",
     "eslint-plugin-html": "^2.0.0",
     "node-sass": "^4.5.0",
+    "now-pipeline": "^1.7.1",
     "pug": "2",
     "pug-loader": "^2.3.0",
     "sass-loader": "^4.1.1",
@@ -37,12 +39,19 @@
     "extensions": [
       "vue"
     ],
+    "envs": [
+      "node",
+      "browser"
+    ],
     "plugins": [
       "html"
     ],
     "semicolon": false,
     "settings": {
       "import/resolver": "webpack"
+    },
+    "rules": {
+      "import/no-webpack-loader-syntax": 0
     }
   }
 }

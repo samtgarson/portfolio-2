@@ -2,6 +2,7 @@ var resolve = require('path').resolve
 
 module.exports = {
   resolve: {
+    extensions: ['.js', '.vue'],
     alias: {
       '~': __dirname,
       static: resolve(__dirname, 'static'), // use in template with <img src="~static/nuxt.png" />
