@@ -41,14 +41,19 @@ export default {
   @media (max-width: $small)
     padding: 10vh 15px
 
+main, aside
+  z-index: 2
+  pointer-events: none
+
+  *
+    pointer-events: auto
+
 @media (min-width: $small)
   main
     width: 50%
-    z-index: 1
     position: relative
 
   aside
-    z-index: 0
     position: fixed
     right: 0px
     left: 0

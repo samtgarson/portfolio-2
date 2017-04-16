@@ -39,10 +39,10 @@ export default {
       const point = this.points[i].p
       return {
         point,
+        rotate: Math.random() * 360,
         style: {
           left: `${point[0] / this.dimensions.w * 100}%`,
-          bottom: `${point[1] / this.dimensions.h * 100}%`,
-          transform: `rotate(${Math.random() * 360}deg)`
+          bottom: `${point[1] / this.dimensions.h * 100}%`
         },
         color: i === 0 ? vars.accent1 : i === 2 ? vars.accent2 : '#fff'
       }
@@ -51,21 +51,23 @@ export default {
   components: { Squiggle }
 }
 </script>
-
 <template lang="pug">
 .squiggle-grid
   .point(v-for="s in squiggles", :style="s.style")
-    squiggle(:color="s.color")
+    squiggle(:color="s.color", :r="s.rotate")
 </template>
-
 <style lang="sass" scoped>
+@import '../assets/global.sass'
 .squiggle-grid
   position: fixed
-  z-index: -1
   left: 0
   right: 0
   top: 0
   bottom: 0
+  z-index: 1
+
+  @media (max-width: $medium )
+    z-index: -1
 
 .point
   position: absolute
