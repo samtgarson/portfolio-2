@@ -1,7 +1,7 @@
 <script>
-import Social from '~components/social'
-import SquiggleGrid from '~components/squiggle-grid'
-import Background from '~components/background'
+import Social from '~/components/social'
+import SquiggleGrid from '~/components/squiggle-grid'
+import Background from '~/components/background'
 
 export default {
   components: {

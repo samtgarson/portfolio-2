@@ -1,5 +1,5 @@
 <script>
-import Squiggle from '~components/squiggle'
+import Squiggle from '~/components/squiggle'
 
 export default {
   components: { Squiggle }

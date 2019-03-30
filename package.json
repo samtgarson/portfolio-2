@@ -7,7 +7,7 @@
   "dependencies": {
     "csshake": "^1.5.1",
     "decouple": "^1.0.0",
-    "nuxt": "latest",
+    "nuxt": "^1",
     "poisson-disk-sampling": "^1.0.1",
     "victor": "^1.1.0"
   },

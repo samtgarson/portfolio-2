@@ -1,5 +1,5 @@
 <script>
-import { dist, vars } from '~assets/utils'
+import { dist, vars } from '~/assets/utils'
 
 const decouple = typeof (window) === 'undefined' ? null : require('decouple')
 

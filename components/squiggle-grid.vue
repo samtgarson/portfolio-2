@@ -1,7 +1,7 @@
 <script>
 import Poisson from 'poisson-disk-sampling'
 import Squiggle from './squiggle'
-import { dist, vars } from '~assets/utils'
+import { dist, vars } from '~/assets/utils'
 
 const MIN_DIST = 160
 const TARGET_FACTOR = 0.7
